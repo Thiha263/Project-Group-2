@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group 2 Online Market - Mobile & Tech</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        :root {
+            --primary: #2563eb;
+            --secondary: #1e40af;
+            --accent: #e60073;
+            --dark: #1f2937;
+            --light: #f3f4f6;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f9fafb;
+            color: #111827;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+        }
+        
+        .navbar {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        
+        footer {
+            background: linear-gradient(135deg, var(--dark) 0%, #111827 100%);
+        }
+
+        .product-card {
+            transition: all 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header/Navbar -->
+    <header class="navbar text-white sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div class="flex items-center space-x-4">
+                    <button class="md:hidden text-white focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                    <a href="index.html" class="flex items-center space-x-2">
+                        <img src="Photo/Beige Brown Minimalist Bake Shop Logo.png" alt="Group 2 Online Market Logo" class="rounded-full">
+                        <span class="text-xl font-bold">Group 2 Online Market</span>
+                    </a>
+                </div>
+                
+                <!-- Navigation Links -->
+                <div class="hidden md:flex items-center space-x-9">
+                    <a href="index.html" class="hover:text-gray-100 transition">Home</a>
+                    <a href="About.html" class="hover:text-gray-100 transition">About</a>
+                    <button class="relative group">
+                        <i class="fas fa-user-circle text-xl"></i>
+                        <span class="group-hover:opacity-100 opacity-0 absolute -bottom-8 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded whitespace-nowrap transition-opacity">
+                            Account
+                        </span>
+                    </button>
+                    <button class="relative group">
+                        <i class="fas fa-shopping-cart text-xl"></i>
+                        <span class="group-hover:opacity-100 opacity-0 absolute -bottom-8 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded whitespace-nowrap transition-opacity">
+                            Cart
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold mb-4">Mobile & Tech</h1>
+        
+        <!-- Best Selling Section -->
+        <section class="mb-12">
+            <div class="flex items-center justify-between mb-6">
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <div class="product-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <a href="ProductDetail.html" class="product-card bg-white rounded-lg shadow-md overflow-hidden">
+                        <div class="relative">
+                            <img src="###" alt="Product 1" class="w-full h-48 object-cover">
+                            <button class="add-to-cart absolute bottom-4 right-4 bg-blue-600 text-white p-2 rounded-full hover:bg-blue-700">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="font-semibold text-lg mb-1">Product Name</h3>
+                            <div class="flex items-center mb-2">
+                                <div class="flex text-yellow-400">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="text-gray-500 text-sm ml-2">(###)</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="text-blue-600 font-bold">### Ks</span>
+                                <span class="text-gray-500 text-sm line-through">### Ks</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <a href="ProductDetail.html" class="product-card bg-white rounded-lg shadow-md overflow-hidden">
+                        <div class="relative">
+                            <img src="###" alt="Product 1" class="w-full h-48 object-cover">
+                            <button class="add-to-cart absolute bottom-4 right-4 bg-blue-600 text-white p-2 rounded-full hover:bg-blue-700">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="font-semibold text-lg mb-1">Product Name</h3>
+                            <div class="flex items-center mb-2">
+                                <div class="flex text-yellow-400">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="text-gray-500 text-sm ml-2">(###)</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="text-blue-600 font-bold">### Ks</span>
+                                <span class="text-gray-500 text-sm line-through">### Ks</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <a href="ProductDetail.html" class="product-card bg-white rounded-lg shadow-md overflow-hidden">
+                        <div class="relative">
+                            <img src="###" alt="Product 1" class="w-full h-48 object-cover">
+                            <button class="add-to-cart absolute bottom-4 right-4 bg-blue-600 text-white p-2 rounded-full hover:bg-blue-700">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="font-semibold text-lg mb-1">Product Name</h3>
+                            <div class="flex items-center mb-2">
+                                <div class="flex text-yellow-400">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="text-gray-500 text-sm ml-2">(###)</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="text-blue-600 font-bold">### Ks</span>
+                                <span class="text-gray-500 text-sm line-through">### Ks</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <a href="ProductDetail.html" class="product-card bg-white rounded-lg shadow-md overflow-hidden">
+                        <div class="relative">
+                            <img src="###" alt="Product 1" class="w-full h-48 object-cover">
+                            <button class="add-to-cart absolute bottom-4 right-4 bg-blue-600 text-white p-2 rounded-full hover:bg-blue-700">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="font-semibold text-lg mb-1">Product Name</h3>
+                            <div class="flex items-center mb-2">
+                                <div class="flex text-yellow-400">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="text-gray-500 text-sm ml-2">(###)</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="text-blue-600 font-bold">### Ks</span>
+                                <span class="text-gray-500 text-sm line-through">### Ks</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <a href="ProductDetail.html" class="product-card bg-white rounded-lg shadow-md overflow-hidden">
+                        <div class="relative">
+                            <img src="###" alt="Product 1" class="w-full h-48 object-cover">
+                            <button class="add-to-cart absolute bottom-4 right-4 bg-blue-600 text-white p-2 rounded-full hover:bg-blue-700">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="font-semibold text-lg mb-1">Product Name</h3>
+                            <div class="flex items-center mb-2">
+                                <div class="flex text-yellow-400">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="text-gray-500 text-sm ml-2">(###)</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="text-blue-600 font-bold">### Ks</span>
+                                <span class="text-gray-500 text-sm line-through">### Ks</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <a href="ProductDetail.html" class="product-card bg-white rounded-lg shadow-md overflow-hidden">
+                        <div class="relative">
+                            <img src="###" alt="Product 1" class="w-full h-48 object-cover">
+                            <button class="add-to-cart absolute bottom-4 right-4 bg-blue-600 text-white p-2 rounded-full hover:bg-blue-700">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="font-semibold text-lg mb-1">Product Name</h3>
+                            <div class="flex items-center mb-2">
+                                <div class="flex text-yellow-400">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="text-gray-500 text-sm ml-2">(###)</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="text-blue-600 font-bold">### Ks</span>
+                                <span class="text-gray-500 text-sm line-through">### Ks</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <a href="ProductDetail.html" class="product-card bg-white rounded-lg shadow-md overflow-hidden">
+                        <div class="relative">
+                            <img src="###" alt="Product 1" class="w-full h-48 object-cover">
+                            <button class="add-to-cart absolute bottom-4 right-4 bg-blue-600 text-white p-2 rounded-full hover:bg-blue-700">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="font-semibold text-lg mb-1">Product Name</h3>
+                            <div class="flex items-center mb-2">
+                                <div class="flex text-yellow-400">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="text-gray-500 text-sm ml-2">(###)</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="text-blue-600 font-bold">### Ks</span>
+                                <span class="text-gray-500 text-sm line-through">### Ks</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <a href="ProductDetail.html" class="product-card bg-white rounded-lg shadow-md overflow-hidden">
+                        <div class="relative">
+                            <img src="###" alt="Product 1" class="w-full h-48 object-cover">
+                            <button class="add-to-cart absolute bottom-4 right-4 bg-blue-600 text-white p-2 rounded-full hover:bg-blue-700">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="font-semibold text-lg mb-1">Product Name</h3>
+                            <div class="flex items-center mb-2">
+                                <div class="flex text-yellow-400">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="text-gray-500 text-sm ml-2">(###)</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="text-blue-600 font-bold">### Ks</span>
+                                <span class="text-gray-500 text-sm line-through">### Ks</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <a href="ProductDetail.html" class="product-card bg-white rounded-lg shadow-md overflow-hidden">
+                        <div class="relative">
+                            <img src="###" alt="Product 1" class="w-full h-48 object-cover">
+                            <button class="add-to-cart absolute bottom-4 right-4 bg-blue-600 text-white p-2 rounded-full hover:bg-blue-700">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="font-semibold text-lg mb-1">Product Name</h3>
+                            <div class="flex items-center mb-2">
+                                <div class="flex text-yellow-400">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="text-gray-500 text-sm ml-2">(###)</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="text-blue-600 font-bold">### Ks</span>
+                                <span class="text-gray-500 text-sm line-through">### Ks</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <a href="ProductDetail.html" class="product-card bg-white rounded-lg shadow-md overflow-hidden">
+                        <div class="relative">
+                            <img src="###" alt="Product 1" class="w-full h-48 object-cover">
+                            <button class="add-to-cart absolute bottom-4 right-4 bg-blue-600 text-white p-2 rounded-full hover:bg-blue-700">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="font-semibold text-lg mb-1">Product Name</h3>
+                            <div class="flex items-center mb-2">
+                                <div class="flex text-yellow-400">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="text-gray-500 text-sm ml-2">(###)</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="text-blue-600 font-bold">### Ks</span>
+                                <span class="text-gray-500 text-sm line-through">### Ks</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <a href="ProductDetail.html" class="product-card bg-white rounded-lg shadow-md overflow-hidden">
+                        <div class="relative">
+                            <img src="###" alt="Product 1" class="w-full h-48 object-cover">
+                            <button class="add-to-cart absolute bottom-4 right-4 bg-blue-600 text-white p-2 rounded-full hover:bg-blue-700">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="font-semibold text-lg mb-1">Product Name</h3>
+                            <div class="flex items-center mb-2">
+                                <div class="flex text-yellow-400">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="text-gray-500 text-sm ml-2">(###)</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="text-blue-600 font-bold">### Ks</span>
+                                <span class="text-gray-500 text-sm line-through">### Ks</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <a href="ProductDetail.html" class="product-card bg-white rounded-lg shadow-md overflow-hidden">
+                        <div class="relative">
+                            <img src="###" alt="Product 1" class="w-full h-48 object-cover">
+                            <button class="add-to-cart absolute bottom-4 right-4 bg-blue-600 text-white p-2 rounded-full hover:bg-blue-700">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="font-semibold text-lg mb-1">Product Name</h3>
+                            <div class="flex items-center mb-2">
+                                <div class="flex text-yellow-400">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="text-gray-500 text-sm ml-2">(###)</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="text-blue-600 font-bold">### Ks</span>
+                                <span class="text-gray-500 text-sm line-through">### Ks</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- Add more product cards as needed -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Group 2 Online Market</h3>
+                    <p class="mb-4 text-gray-300">Your one-stop online shopping destination with the best prices and quality products.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-facebook-f text-xl"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-youtube text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Shop</h3>
+                    <ul class="space-y-2">
+                        <li><a href="Basic Food Products.html" class="footer-link text-gray-300 hover:text-white transition">Basic Food Products</a></li>
+                        <li><a href="Drinks.html" class="footer-link text-gray-300 hover:text-white transition">Drinks</a></li>
+                        <li><a href="Diary and Frozen.html" class="footer-link text-gray-300 hover:text-white transition">Dairy and Frozen</a></li>
+                        <li><a href="Fruits.html" class="footer-link text-gray-300 hover:text-white transition">Fruits</a></li>
+                        <li><a href="Mother & Baby.html" class="footer-link text-gray-300 hover:text-white transition">Mother & Baby</a></li>
+                        <li><a href="Mobile & Tech.html" class="footer-link text-gray-300 hover:text-white transition">Mobile & Tech</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Customer Service</h3>
+                    <ul class="space-y-2">
+                        <li><a href="Contact.html" class="footer-link text-gray-300 hover:text-white transition">Contact Us</a></li>
+                        <li><a href="About.html" class="footer-link text-gray-300 hover:text-white transition">About</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Newsletter</h3>
+                    <p class="mb-4 text-gray-300">Subscribe to get updates on new products and special offers.</p>
+                    <div class="flex">
+                        <input type="email" placeholder="Your email address" class="flex-1 px-4 py-2 rounded-l-md bg-gray-700 text-white focus:outline-none">
+                        <button class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-r-md transition">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm mb-4 md:mb-0">© 2023 Group 2 Online Market Online. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Add to cart functionality
+        document.querySelectorAll('.add-to-cart').forEach(button => {
+            button.addEventListener('click', function(e) {
+                e.stopPropagation();
+                alert('Product added to cart!');
+                // In a real implementation, this would update the cart count
+            });
+        });
+    </script>
+</body>
+</html>

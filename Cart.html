@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group 2 Online Market - Cart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        :root {
+            --primary: #2563eb;
+            --secondary: #1e40af;
+            --accent: #e60073;
+            --dark: #1f2937;
+            --light: #f3f4f6;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f9fafb;
+            color: #111827;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+        }
+        
+        .navbar {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        
+        footer {
+            background: linear-gradient(135deg, var(--dark) 0%, #111827 100%);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header/Navbar -->
+    <header class="navbar text-white sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div class="flex items-center space-x-4">
+                    <button class="md:hidden text-white focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                    <a href="#" class="flex items-center space-x-2">
+                        <img src="Photo/Beige Brown Minimalist Bake Shop Logo.png" alt="Group 2 Online Market Logo" class="rounded-full">
+                        <span class="text-xl font-bold">Group 2 Online Market</span>
+                    </a>
+                </div>
+                
+                <!-- Navigation Links -->
+                <div class="hidden md:flex items-center space-x-9">
+                    <a href="#" class="hover:text-gray-100 transition">Home</a>
+                    <a href="#" class="hover:text-gray-100 transition">About</a>
+                    <button class="relative group">
+                        <i class="fas fa-user-circle text-xl"></i>
+                        <span class="group-hover:opacity-100 opacity-0 absolute -bottom-8 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded whitespace-nowrap transition-opacity">
+                            Account
+                        </span>
+                    </button>
+                    <button class="relative group">
+                        <i class="fas fa-shopping-cart text-xl"></i>
+                        <span class="group-hover:opacity-100 opacity-0 absolute -bottom-8 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded whitespace-nowrap transition-opacity">
+                            Cart
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold mb-4">Shopping Cart</h1>
+        
+        <div class="bg-white p-6 rounded-lg shadow-md">
+            <table class="min-w-full">
+                <thead>
+                    <tr class="border-b">
+                        <th class="text-left py-2">Product</th>
+                        <th class="text-left py-2">Price</th>
+                        <th class="text-left py-2">Quantity</th>
+                        <th class="text-left py-2">Total</th>
+                        <th class="text-left py-2">Remove</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="border-b">
+                        <td class="py-2">Nestle Nescafe Red Cup-100g</td>
+                        <td class="py-2">20,750 Ks</td>
+                        <td class="py-2">1</td>
+                        <td class="py-2">20,750 Ks</td>
+                        <td class="py-2"><button class="text-red-600 hover:text-red-800"><i class="fas fa-trash"></i></button></td>
+                    </tr>
+                    <tr class="border-b">
+                        <td class="py-2">Coca Cola Classic 1.25Ltr</td>
+                        <td class="py-2">2,500 Ks</td>
+                        <td class="py-2">2</td>
+                        <td class="py-2">5,000 Ks</td>
+                        <td class="py-2"><button class="text-red-600 hover:text-red-800"><i class="fas fa-trash"></i></button></td>
+                    </tr>
+                    <tr class="border-b">
+                        <td class="py-2">Danisa Butter Cookies-454g</td>
+                        <td class="py-2">25,600 Ks</td>
+                        <td class="py-2">1</td>
+                        <td class="py-2">25,600 Ks</td>
+                        <td class="py-2"><button class="text-red-600 hover:text-red-800"><i class="fas fa-trash"></i></button></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="mt-4 flex justify-between">
+                <span class="font-bold">Total:</span>
+                <span class="font-bold">51,350 Ks</span>
+            </div>
+            <button class="mt-4 w-full bg-blue-600 text-white font-semibold py-2 rounded-md hover:bg-blue-700 transition">
+                Proceed to Checkout
+            </button>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Group 2 Online Market</h3>
+                    <p class="mb-4 text-gray-300">Your one-stop online shopping destination with the best prices and quality products.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-facebook-f text-xl"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-youtube text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Shop</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="footer-link text-gray-300 hover:text-white transition">Basic Food Products</a></li>
+                        <li><a href="#" class="footer-link text-gray-300 hover:text-white transition">Drinks</a></li>
+                        <li><a href="#" class="footer-link text-gray-300 hover:text-white transition">Dairy and Frozen</a></li>
+                        <li><a href="#" class="footer-link text-gray-300 hover:text-white transition">Fruits</a></li>
+                        <li><a href="#" class="footer-link text-gray-300 hover:text-white transition">Mother & Baby</a></li>
+                        <li><a href="#" class="footer-link text-gray-300 hover:text-white transition">Mobile & Tech</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Customer Service</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="footer-link text-gray-300 hover:text-white transition">Contact Us</a></li>
+                        <li><a href="#" class="footer-link text-gray-300 hover:text-white transition">About</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Newsletter</h3>
+                    <p class="mb-4 text-gray-300">Subscribe to get updates on new products and special offers.</p>
+                    <div class="flex">
+                        <input type="email" placeholder="Your email address" class="flex-1 px-4 py-2 rounded-l-md bg-gray-700 text-white focus:outline-none">
+                        <button class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-r-md transition">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm mb-4 md:mb-0">© 2023 Group 2 Online Market Online. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Add any necessary JavaScript here
+    </script>
+</body>
+</html>
